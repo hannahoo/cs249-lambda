@@ -27,7 +27,7 @@ class Item(object):
   orig_destination_distance = None
   random_bool = None
   comp1_rate = None
-  comp1_invv = None
+  comp1_inv = None
   comp1_rate_percent_diff = None
   comp2_rate = None
   comp2_inv = None
@@ -51,7 +51,7 @@ class Item(object):
   comp8_inv = None
   comp8_rate_percent_diff = None
   click_bool = None
-  gross_bookings_usd = None
+  gross_bookings_usd = None # continuous
   booking_bool = None
 
   def __str__(self):
@@ -109,7 +109,7 @@ self.srch_query_affinity_score,
 self.orig_destination_distance,
 self.random_bool,
 self.comp1_rate,
-self.comp1_invv,
+self.comp1_inv,
 self.comp1_rate_percent_diff,
 self.comp2_rate,
 self.comp2_inv,
@@ -166,7 +166,7 @@ self.booking_bool
     self.orig_destination_distance = fields[25]
     self.random_bool = fields[26]
     self.comp1_rate = fields[27]
-    self.comp1_invv = fields[28]
+    self.comp1_inv = fields[28]
     self.comp1_rate_percent_diff = fields[29]
     self.comp2_rate = fields[30]
     self.comp2_inv = fields[31]
